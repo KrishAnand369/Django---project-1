@@ -41,8 +41,8 @@ def productView(request,cate_slug,prod_slug):
             context={'products':products}
         else:
             messages.error(request,"No Such Product Found")
-            return redirect('collections')
+            return redirect('/')
     else:
         messages.error(request,"No Such Category Found")
-        return redirect("collections")
+        return redirect("/")
     return render(request,'store/products/view.html',context)

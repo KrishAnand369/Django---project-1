@@ -30,7 +30,6 @@ urlpatterns = [
     path('login/',authView.loginpage,name = 'loginPage'),
     path('add-to-cart',myFoodFiesta.addToCart,name="/add-to-cart"),
     path('add-to-wishlist', wishlist.addToWishlist, name='/add-to-wishlist'),
-
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
